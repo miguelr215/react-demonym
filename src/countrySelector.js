@@ -3,10 +3,28 @@ import './countrySelector.css';
 
 class CountrySelector extends Component {
     render(){
+        const options = this
+            .props
+            .countries
+            .map(
+                (country, i) => <option value={country.name} key={i}>{country.name}</option>
+            );
         return(
-            <div></div>
+            <div className='country_selector'>
+                <form>
+                    <label htmlFor='country'>Select a Country:</label>
+                    <select id='country' name='country'>
+                        <option value='none'>Select one...</option>
+                        {options}
+                    </select>
+                </form>
+            </div>
         )
     }
 }
+
+CountrySelector.defaultProps = {
+    countries: []
+};
 
 export default CountrySelector;

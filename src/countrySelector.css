@@ -1,0 +1,14 @@
+.country_selector {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+}
+
+label, select {
+    font-size: 16px;
+    margin: 3px;
+}

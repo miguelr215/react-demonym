@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
-import CountrySelector from './countrySelector.js';
+import DemonymApp from './demonymApp.js';
 
-describe('CountrySelector Component', () => {
+describe('DemonymApp Component', () => {
     it('renders without crashing', () => {
         const div = document.createElement('div');
-        ReactDOM.render(<CountrySelector />, div);
+        ReactDOM.render(<DemonymApp />, div);
         ReactDOM.unmountComponentAtNode(div);
     })
 })
