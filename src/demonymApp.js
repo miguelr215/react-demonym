@@ -34,7 +34,7 @@ class DemonymApp extends Component {
 
     render(){
         const demon = this.state.selected
-            ? <Demonym name={this.state.selected['citizen-names']} country={this.state.countries.name}/>
+            ? <Demonym name={this.state.selected['citizen-names']} country={this.state.selected['name']}/>
             : <div className='demonym_app__placeholder'>Select a Country above</div>
 
         return(
