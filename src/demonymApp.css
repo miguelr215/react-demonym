@@ -1,0 +1,8 @@
+.demonym_app__placeholder {
+    color: rgb(160, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 3px;
+    font-family: Helvetica, sans-serif;
+}
